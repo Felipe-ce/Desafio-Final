@@ -7,6 +7,10 @@ function App() {
     <>
       {/* impotando a pagina de blog */}
       <Blog />
+
+      {/* ========================================
+      Mudar a cor do texto, tirar o preto puro
+      ======================================== */}
     </>
   );
 }
