@@ -1,0 +1,42 @@
+span{
+  position: relative;
+  font-style: italic;
+  font-weight: 700;
+}
+span::after {
+  content: "";
+  height: 0.938rem;
+  width: 4rem;
+  background:  rgba(48, 140, 85, 1);
+  display: block;
+  opacity: .5;
+  position: absolute;
+  bottom: 0.01rem;
+  left: -0.2rem;
+  z-index: -1;
+  border-radius: 0.313rem;
+}
+.tituloBlog{
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+.subTituloBlog{
+  font-size: 1.25rem;
+  text-align: center;
+}
+.containerCard{
+  max-width: 740px;
+  padding: 4rem 1.25rem;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media screen and (max-width: 768.9px){
+  .containerCard{
+    grid-template-columns: auto;
+  }
+}
