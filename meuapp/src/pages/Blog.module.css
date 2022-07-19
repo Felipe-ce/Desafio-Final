@@ -3,6 +3,7 @@ span{
   font-style: italic;
   font-weight: 700;
 }
+/* Adicionando o efeito verde no span */
 span::after {
   content: "";
   height: 0.938rem;
@@ -18,9 +19,9 @@ span::after {
 }
 .tituloBlog{
   font-size: 2.25rem;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
-  margin: 0 0 1rem 0;
+  margin: 0 0 .5rem 0;
 }
 .subTituloBlog{
   font-size: 1.25rem;
@@ -35,6 +36,7 @@ span::after {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
+/* Deixando o blog responsivo */
 @media screen and (max-width: 768.9px){
   .containerCard{
     grid-template-columns: auto;

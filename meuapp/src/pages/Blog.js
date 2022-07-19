@@ -1,6 +1,8 @@
 import React from 'react';
+//Importando componentes
 import CardBlog from '../components/CardBlog';
 import Logo from '../components/Logo';
+//Importando estilos da pagina
 import styles from './Blog.module.css';
 
 const Blog = () => {
@@ -8,10 +10,14 @@ const Blog = () => {
     <>
       <Logo />
       <h1 className={styles.tituloBlog}>Felipe Xavier</h1>
-      <p className={styles.subTituloBlog}>Front-End & <span>UI/UX</span> Designer</p>
+      <p className={styles.subTituloBlog}>
+        {/* o SPAN sera estilizado no css */}
+        Front-End & <span>UI/UX</span> Designer
+      </p>
 
-      {/* Importando cada card */}
+      {/* Seção de agupamento para os cards */}
       <section className={styles.containerCard}>
+        {/* Estou passando os parametros titulo e paragrafo em cada card/componente */}
         <CardBlog
           titulo="Desenvolvimento Sustentável"
           paragrafo="Desenvolvimento econômico, que leva em conta o meio ambiente."

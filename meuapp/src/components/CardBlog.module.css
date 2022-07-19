@@ -11,10 +11,10 @@
   color:  rgba(48, 140, 85, 1);
 }
 .cardBlog h2{
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 .cardBlog p{
-  font-size: 1.125rem;
+  font-size: 1rem;
 }

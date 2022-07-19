@@ -5,6 +5,7 @@ import Blog from './pages/Blog';
 function App() {
   return (
     <>
+      {/* impotando a pagina de blog */}
       <Blog />
     </>
   );
