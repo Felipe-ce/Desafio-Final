@@ -18,26 +18,40 @@ const Blog = () => {
 
       {/* Seção de agupamento para os cards */}
       <section className={styles.containerCard}>
+        {/* <nav>
+          <Link to="/">Home</Link>
+          <Link to="sobre">Sobre</Link>
+          <Link to="contato">Contato</Link>
+        </nav> */}
+
         {/* Estou passando os parametros titulo e paragrafo em cada card/componente */}
-        <CardBlog
-          titulo="Desenvolvimento Sustentável"
-          paragrafo="Desenvolvimento econômico, que leva em conta o meio ambiente."
-        />
+        <Link to="/devsustentavel">
+          <CardBlog
+            titulo="Desenvolvimento Sustentável"
+            paragrafo="Desenvolvimento econômico, que leva em conta o meio ambiente."
+          />
+        </Link>
 
-        <CardBlog
-          titulo="Portfolio"
-          paragrafo="Conheça um pouco mais sobre meu trabalho."
-        />
+        <a href="https://felipeads.com/" target="_blank">
+          <CardBlog
+            titulo="Portfolio"
+            paragrafo="Conheça um pouco mais sobre meu trabalho."
+          />
+        </a>
 
-        <CardBlog
-          titulo="Git Hub"
-          paragrafo="Acompanhe e colabore com minha rede de códigos."
-        />
+        <a href="https://github.com/Felipe-ce" target="_blank">
+          <CardBlog
+            titulo="Git Hub"
+            paragrafo="Acompanhe e colabore com minha rede de códigos."
+          />
+        </a>
 
-        <CardBlog
-          titulo="Vai na Web"
-          paragrafo="Uma plataforma de formação de talentos digitais."
-        />
+        <a href="https://www.vainaweb.com.br/" target="_blank">
+          <CardBlog
+            titulo="Vai na Web"
+            paragrafo="Uma plataforma de formação de talentos digitais."
+          />
+        </a>
       </section>
     </>
   );
