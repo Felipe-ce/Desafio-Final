@@ -1,0 +1,39 @@
+.headerContainer{
+  max-width: 1180px;
+  display: grid;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.unLogo{
+  max-width: 300px;
+}
+.headerContainer > div{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  padding-bottom: 1.25rem;
+  border-bottom: solid 2px rgba(0, 0, 0, .1);
+}
+input{
+  border: solid 2px #c5c5c5;
+  border-radius: 20px;
+  padding: .5rem;
+  width: 300px;
+}
+.menu ul{
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.menu li{
+  cursor: pointer;
+  padding: .5rem;
+}
+.menu li:hover{
+  border-bottom: solid 3px #009edb;
+}
+.menu li.ativo {
+  font-weight: bold;
+  border-bottom: solid 4px #009edb;
+}

@@ -1,10 +1,10 @@
-span{
+p span{
   position: relative;
   font-style: italic;
   font-weight: 700;
 }
 /* Adicionando o efeito verde no span */
-span::after {
+p span::after {
   content: "";
   height: 0.938rem;
   width: 4rem;

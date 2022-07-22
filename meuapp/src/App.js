@@ -2,9 +2,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Blog from './pages/Blog';
-import Sobre from './pages/Sobre';
 import Error404 from './pages/Error404';
 import DevSustentavel from './pages/DevSustentavel';
+import Um from './pages/Um';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Blog />} />
         <Route path="/devsustentavel" element={<DevSustentavel />} />
+        <Route path="/um" element={<Um />} />
 
         {/* Caso seja inserido uma URL que não existe sera redirecionado a pagina de erro */}
         <Route path="*" element={<Error404 />} />
